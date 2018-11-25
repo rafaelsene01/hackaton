@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Menu Lateral</title>
+
+	<style>
+		html{
+			overflow-y: hidden;
+		}
+		*{
+			margin: 0;
+			box-sizing: border-box;
+			padding: 0;
+		}
+
+		body{
+			background-color: #f9f9f9;
+		}
+		#check{
+			display: none;
+		}
+		#icone{
+			cursor: pointer;
+			padding: 15px;
+			position: absolute;
+			z-index: 1;
+		}
+		.barra{
+			background-color: #ffffff;
+			height: 100%;
+			margin-top: 60px;
+			width: 200px;
+			position: absolute;
+			transition: all .2s linear;
+			left: -300px;
+		}
+		nav{
+			width: 100%;
+			position: absolute;
+			top: 0px;
+		}
+		nav a{
+			text-decoration: none;
+		}
+		.link{
+			opacity: 1;
+			background-color: #ffffff;
+			padding: 20px;
+			font-family: 'Arial';
+			font-size: 12pt;
+			margin-top: -60px;
+			transition: all .2s linear;
+			color: #000000;
+			border-bottom: 2px solid #222;
+			opacity: 0;
+			margin-top:100px;
+		}
+		.link:hover{
+			background-color: #23b7e5;
+			color: #ffffff;
+		}
+		#check:checked ~ .barra{
+			transform: translate(300px);
+		}
+		#check:checked ~ .barra nav a .link{
+			opacity: 1;
+			margin-top: 0;
+			transition-delay: .3s;
+		}
+		.barra1 {
+		  background-color: #23b7e5;
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  right: 0;
+		  height: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div class="barra1"></div>
+	
+	<input type="checkbox" id="check">
+	<label id="icone" for="check">
+		<img src="icone.png">
+	</label>
+	<div class="barra">
+		<nav>
+			<a href="">
+				<div class="link">Login</div>
+				<div class="link">Empresas</div>
+				<div class="link">Filiais</div>
+				<div class="link">Transporte</div>
+			</a>
+		</nav>
+	</div>
+	
+
+</body>
+</html>

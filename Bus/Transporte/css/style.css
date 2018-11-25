@@ -1,0 +1,42 @@
+.botao {
+	background-color:#fff;
+	color:#000;
+	font-size:18px;
+	min-width:150px;
+	min-height:50px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+	box-shadow: 0px 0px 5px #FFF;
+	
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;		
+}
+
+.botao:hover {
+	background-color:#feffee;
+	color:#000;
+	font-size:18px;
+	min-width:165px;
+	min-height:55px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	box-shadow: 0px 0px 5px #FFF;
+	
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
